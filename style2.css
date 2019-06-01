@@ -11,6 +11,7 @@ html, body {
     margin: 30px auto;
     padding: 20px;
     width: 72%;
+    border-radius: 5px;
 }
 
 #subheader {
@@ -57,4 +58,14 @@ input[type="checkbox"], input[type="radio"] {
 #comments > input {
     height: 60px;
     width: 60%;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
 }

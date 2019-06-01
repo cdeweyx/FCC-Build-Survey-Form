@@ -9,10 +9,13 @@ html, body {
 .container {
     background: white;
     margin: 30px auto;
+    padding: 20px;
     width: 72%;
-    border: 3px solid red;
 }
 
+#subheader {
+    margin-bottom: 25px;
+}
 form {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr .5fr;
@@ -25,26 +28,33 @@ label {
     padding: 12px;
 }
 
-input, #role-input {
+input[type="text"], #role-input, #likes-input{
     grid-column: 2 / 3;
     width: 100%;
     margin-bottom: 10px;
 }
 
-#role-input {
-    width: 30%;
+#role-input, #likes-input {
+    width: 40%;
     height: 35px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-#buttons {
-    display: inline;
-    border: 3px solid red;
+#radio-buttons, #check-buttons {
+    vertical-align: top;
+    text-align: left;
 }
 
-#buttons > p {
-    float: left;
-    clear: left;
-    border: 3px solid red;
+input[type="checkbox"], input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+#comments > input {
+    height: 60px;
+    width: 60%;
 }

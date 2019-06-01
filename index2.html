@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
 <head>
@@ -41,33 +41,37 @@
     <form id="recommend-form">
         <label class=rec>* How likely are you to recommend
         freeCodeCamp to a friend?</label>
-        <div id="buttons">
-        <input type="radio" id="rec-input" value="definitely">Definitely<br>
-
-    </div>
+        <div id="radio-buttons">
+            <input type="radio" id="rec-input" value="definitely"> Definitely<br>
+            <input type="radio" id="rec-input" value="maybe"> Maybe<br>
+            <input type="radio" id="rec-input" value="no"> Not sure<br>
+        </div>
     </form>
 
-    <div id="likes">
-        <p>What do you like most in FCC:</p>
-        <select id="likes" >
+    <form id="likes-form">
+        <label class="likes">What do you like most in FCC:</label>
+        <select id="likes-input">
             <option value="select" disabled selected>Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="community">Community</option>
             <option value="lessons">Lessons</option>
         </select>
-    </div>
+    </form>
 
-    <form id="improvements">
-        Things that should be improved in the future (Check all that apply):<br>
+    <form id="improve-form">
+        <label class=rec> Things that should be improved in the future
+        (Check all that apply):</label>
+        <div id="check-buttons">
         <input type="checkbox" name="improvements" value="front-end"> Front-end Projects<br>
         <input type="checkbox" name="improvements" value="back-end"> Back-end Projects<br>
         <input type="checkbox" name="improvements" value="data"> Data Visualization<br>
         <input type="checkbox" name="improvements" value="courses"> Additional Courses<br>
+        </div>
     </form>
 
     <form id="comments">
-            Any Comments or Suggestions? <input type="text" name="comments"
-            placeholder="Enter your comment here...">
+            <label id="comm">Any Comments or Suggestions? </label>
+            <input type="text" name="comments" placeholder="Enter your comment here...">
     </form>
 
     <input type="submit" name="Submit">

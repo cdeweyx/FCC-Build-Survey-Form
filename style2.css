@@ -1,0 +1,50 @@
+
+html, body {
+    background: #a9d7d1;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    min-width: 260px;
+}
+
+.container {
+    background: white;
+    margin: 30px auto;
+    width: 72%;
+    border: 3px solid red;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr .5fr;
+    grid-gap: 16px;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: right;
+    padding: 12px;
+}
+
+input, #role-input {
+    grid-column: 2 / 3;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#role-input {
+    width: 30%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#buttons {
+    display: inline;
+    border: 3px solid red;
+}
+
+#buttons > p {
+    float: left;
+    clear: left;
+    border: 3px solid red;
+}

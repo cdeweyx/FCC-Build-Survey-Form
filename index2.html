@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+<header>
+    <h1>Survey Form</h1>
+</header>
+
+<div class="container">
+    <p id="subheader">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="name-form">
+        <label for="name" class="name">* Name:</label>
+        <input id="name" type="text" placeholder="Enter your name">
+    </form>
+
+    <form id="email-form">
+        <label for="email" class="email">* Email:</label>
+        <input id="email" type="text" placeholder="Enter your email">
+    </form>
+
+    <form id="age-form">
+        <label for="age" class="age">* Age:</label>
+        <input id="age" type="text" placeholder="Enter your age">
+    </form>
+
+    <form id="role-form">
+        <label class="role">Which option best describes your current role?</label>
+        <select id="role-input">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="other">Other</option>
+        </select>
+    </form>
+
+    <form id="recommend-form">
+        <label class=rec>* How likely are you to recommend
+        freeCodeCamp to a friend?</label>
+        <div id="buttons">
+        <input type="radio" id="rec-input" value="definitely">Definitely<br>
+
+    </div>
+    </form>
+
+    <div id="likes">
+        <p>What do you like most in FCC:</p>
+        <select id="likes" >
+            <option value="select" disabled selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="community">Community</option>
+            <option value="lessons">Lessons</option>
+        </select>
+    </div>
+
+    <form id="improvements">
+        Things that should be improved in the future (Check all that apply):<br>
+        <input type="checkbox" name="improvements" value="front-end"> Front-end Projects<br>
+        <input type="checkbox" name="improvements" value="back-end"> Back-end Projects<br>
+        <input type="checkbox" name="improvements" value="data"> Data Visualization<br>
+        <input type="checkbox" name="improvements" value="courses"> Additional Courses<br>
+    </form>
+
+    <form id="comments">
+            Any Comments or Suggestions? <input type="text" name="comments"
+            placeholder="Enter your comment here...">
+    </form>
+
+    <input type="submit" name="Submit">
+</div>
+
+</body>
+</html>
